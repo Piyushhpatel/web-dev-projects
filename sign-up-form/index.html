@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sign Up Form</title>
+</head>
+<body>
+    <div class="container">
+        <div class="logo-container">
+            <div class="logo-image-container">
+                <img src="assets/odin-logo.png" alt="Logo">
+                <h1>Odin</h1>
+            </div>
+        </div>
+        <div class="form-container">
+            <div class="box" id="one">
+                <p id="para1">This is not a real online service! You know you need something like this in your life to help you realize your deepest dream.</p>
+                <p id="para2">Sign Up now to get started.</p>
+                <p id="para3">You know you want to.</p>
+            </div>
+            <div class="box" id="two">
+                <h3>Let's do this!</h3>
+                <form action="#">
+                    <div class="pair">
+                        <div class="wrap">
+                            <Label for="first-name">First Name</Label>
+                            <input type="text" name="First Name" id="first-name">
+                        </div>
+                        <div class="wrap">
+                            <Label for="last-name">Last Name</Label>
+                            <input type="text" name="Last Name" id="last-name">
+                        </div>
+                    </div>
+                    <div class="pair">
+                        <div class="wrap">
+                            <Label for="email">Email</Label>
+                            <input type="email" name="Email" id="email">
+                        </div>
+                        <div class="wrap">
+                            <Label for="phone">Phone Number</Label>
+                            <input type="number" name="Phone" id="phone">
+                        </div>
+                    </div>
+                    <div class="pair">
+                        <div class="wrap">
+                            <Label for="password">Password</Label>
+                            <input type="password" name="Password" id="password"> 
+                        </div>
+                        <div class="wrap">
+                            <Label for="confirm-pass">Confirm Password</Label>
+                            <input type="password" name="Confirm Password" id="confirm-pass">
+                        </div>
+                    </div>
+                    
+                </form>
+            </div>
+            <div class="box" id="three">
+                <button>
+                    Create Account
+                </button>
+                <p>Already have an account ? <a href="#">Log in</a></p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

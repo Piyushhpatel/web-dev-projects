@@ -1,0 +1,146 @@
+@font-face {
+    font-family: NorseBold;
+    src: url("assets/Norsebold.otf");
+}
+
+* {
+    box-sizing: border-box;
+    /* outline: 2px solid black; */
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    height: 100vh;
+}
+
+.logo-container{
+    background-image: url("assets/bgimage.jpg");
+    background-size: cover;
+}
+
+.logo-image-container{
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.526);
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 20%;
+}
+
+.logo-image-container > img{
+    height: 80px;
+}
+.logo-image-container > h1 {
+    color: white;
+    font-family: 'NorseBold';
+    font-size: 60px;
+}
+
+.form-container{
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+#one{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#one > p{
+    position: relative;
+    left: 5%;
+    margin: 0px;
+    padding: 5px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+}
+
+#para1{
+    width: 59%;
+}
+
+#para2{
+    width: fit-content;
+}
+
+#para3{
+    width: fit-content;
+    position: relative;
+    top: 10%;
+}
+
+#three > button, p{
+    position: relative;
+    left: 5%;
+    top: 5%;
+    width: max-content;
+}
+
+#three > button{
+    height: 2.5rem;
+    width: 12rem;
+    font-size: 14px;
+    border-radius: 8px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    background-color: #596D48;  
+}
+
+#three > p {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    font-weight: 800;
+}
+
+#three > p > a{
+    color: #596D48;
+    text-decoration: none;
+}
+
+#two {
+    box-shadow: 1px 1px 5px gray;
+}
+
+#two > h3{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: max-content;
+    position: relative;
+    left: 5%;
+}
+
+#two > form{
+    width: max-content;
+    position: relative;
+    left: 5%;
+}
+
+.pair{
+    display: flex;
+}
+
+.wrap{
+    display: flex;
+    flex-direction: column;
+    margin: 3px;
+}
+
+.wrap > label{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.wrap > input {
+    border:1px solid #E5E7EB;
+    border-radius: 2px;
+    height: 1.5rem;
+}
