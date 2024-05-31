@@ -10,7 +10,7 @@ const errorScreen = document.querySelector(".error-container");
 // Initial Variable 
 
 let currentTab = userTab;
-const API_KEY = "0525774572a5be395da05b7ebd205dfe";
+const API_KEY = "";
 currentTab.classList.add("current-tab");
 getfromSessionStorage();
 
