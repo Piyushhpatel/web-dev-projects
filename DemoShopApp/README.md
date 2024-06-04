@@ -1,8 +1,18 @@
-# React + Vite
+## Demo Shop App
+This is simple demo shop app which is a starting of learning react, the project is created to learn the various concept such as:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+1. React Components
+2. React useState Hook
+3. props and pros function
+4. How to pass data from parent to child and child to parent
 
-Currently, two official plugins are available:
+### To Checkout this project 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. Clone the repositiory 
+
+2. Use the command:
+    ```
+    cd DemoShopApp
+    npm install
+    npm run start
+    ```

@@ -6,7 +6,9 @@ If you are someone who want to learn web development without getting stuck into 
 [The Odin Project](https://www.theodinproject.com)
 
 ## The Project that I've built so far 
+There are two parts in the projects first created using simple html, css and vanila js and second using react
 
+### Javascript Projects
 1. Simple Landing Page
 2. Rock Paper Scissors
 3. Etch A Sketch
@@ -17,3 +19,6 @@ If you are someone who want to learn web development without getting stuck into 
 8. Password Generator
 9. Weather App
 10. Tic Tac Toe
+
+### React Project
+1. Demo Shop App
