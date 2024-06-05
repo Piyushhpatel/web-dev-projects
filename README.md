@@ -22,3 +22,4 @@ There are two parts in the projects first created using simple html, css and van
 
 ### React Project
 1. Demo Shop App
+2. Counter App
