@@ -1,5 +1,5 @@
-# Plan With App
-This is a simple app to practice the useState hooks as well how to pass data from parents to child and child to parent how to traverse through data and update in data in react
+# Todo List App
+This is a simple to do app app to practice the everything learnt so far how to use the useState hook how to pass and feth data how to update data on screen and other react things.
 
 ## Installation
 
