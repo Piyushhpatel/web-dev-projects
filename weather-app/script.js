@@ -63,7 +63,7 @@ async function fetchUserWeatherInfo(coordinates){
     loadingScreen.classList.add("active");
 
     try{
-        const reponse = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=metric`)
+        const reponse = await fetch(`http://api.weatherapi.com/v1/current.json?key=${API_KEY}&q=${lat},${lon}&aqi=no`)
         const data = await reponse.json();
         loadingScreen.classList.remove("active");
         userInfoContainer.classList.add("active");
@@ -85,16 +85,18 @@ function renderWeatherInfo(weatherInfo){
     const windspeed = document.querySelector("[data-windspeed]");
     const humidity = document.querySelector("[data-humidity]");
     const cloudiness = document.querySelector("[data-cloudiness]");
+    const country = weatherInfo?.location?.country;
+    const code = country.substr(0,2);
 
     //Fetch Values and put in ui elements
-    cityName.innerText = weatherInfo?.name;
-    countryIcon.src = `https://flagcdn.com/144x108/${weatherInfo?.sys?.country.toLowerCase()}.png`;
-    desc.innerText = weatherInfo?.weather?.[0]?.description;
-    weatherIcon.src = `http://openweathermap.org/img/w/${weatherInfo?.weather?.[0]?.icon}.png`;
-    temp.innerText = `${weatherInfo?.main?.temp} °C`;
-    windspeed.innerText = `${weatherInfo?.wind?.speed} m/s`;
-    humidity.innerText = `${weatherInfo?.main?.humidity}%`;
-    cloudiness.innerText = `${weatherInfo?.clouds?.all}%`;
+    cityName.innerText = weatherInfo?.location?.name;   
+    countryIcon.src = `https://flagcdn.com/144x108/${code.toLowerCase()}.png`;
+    desc.innerText = weatherInfo?.current?.condition?.text;
+    weatherIcon.src = weatherInfo?.current?.condition?.icon;
+    temp.innerText = `${weatherInfo?.current?.temp_c} °C`;
+    windspeed.innerText = `${weatherInfo?.current?.wind_kph} km/h`;
+    humidity.innerText = `${weatherInfo?.current?.humidity}%`;
+    cloudiness.innerText = `${weatherInfo?.current?.cloud}%`;
 }
 
 function getLocation(){
@@ -134,7 +136,7 @@ async function fetchSearchWeatherInfo(city) {
     grantAccessContainer.classList.remove("active");
 
     try {
-        const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}`);
+        const response = await fetch(`http://api.weatherapi.com/v1/current.json?key=${API_KEY}&q=${city}&aqi=no`);
         const data = await response.json();
         console.log(data);
         loadingScreen.classList.remove("active");

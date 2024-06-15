@@ -33,7 +33,7 @@ h1{
     max-width: 550px;
     width: 90%;
     margin: auto;
-    margin-top: 4rem;
+    margin-top: 1.5rem;
 }
 
 .tab{
@@ -53,7 +53,7 @@ h1{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-block: 4rem;
+    margin-block: 2rem;
 }
 
 .btn{
