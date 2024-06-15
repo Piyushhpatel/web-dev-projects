@@ -25,3 +25,5 @@ There are two parts in the projects first created using simple html, css and van
 2. Counter App
 3. Plan With Love
 4. Todo List
+5. Top Courses
+6. Testimonial Site
