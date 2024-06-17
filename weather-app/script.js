@@ -8,9 +8,8 @@ const userInfoContainer = document.querySelector(".user-info-container");
 const errorScreen = document.querySelector(".error-container");
 
 // Initial Variable 
-
-let currentTab = userTab;
 const API_KEY = "";
+let currentTab = userTab;
 currentTab.classList.add("current-tab");
 getfromSessionStorage();
 
@@ -78,19 +77,15 @@ async function fetchUserWeatherInfo(coordinates){
 function renderWeatherInfo(weatherInfo){
     // Fetch Elements
     const cityName = document.querySelector("[data-cityName]");
-    const countryIcon = document.querySelector("[data-countryIcon]");
     const desc = document.querySelector("[data-weatherDesc]");
     const weatherIcon = document.querySelector("[data-weatherIcon]");
     const temp = document.querySelector("[data-temp]");
     const windspeed = document.querySelector("[data-windspeed]");
     const humidity = document.querySelector("[data-humidity]");
     const cloudiness = document.querySelector("[data-cloudiness]");
-    const country = weatherInfo?.location?.country;
-    const code = country.substr(0,2);
 
     //Fetch Values and put in ui elements
-    cityName.innerText = weatherInfo?.location?.name;   
-    countryIcon.src = `https://flagcdn.com/144x108/${code.toLowerCase()}.png`;
+    cityName.innerText = weatherInfo?.location?.name;
     desc.innerText = weatherInfo?.current?.condition?.text;
     weatherIcon.src = weatherInfo?.current?.condition?.icon;
     temp.innerText = `${weatherInfo?.current?.temp_c} °C`;
