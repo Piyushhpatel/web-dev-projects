@@ -26,4 +26,11 @@ There are two parts in the projects first created using simple html, css and van
 3. Plan With Love
 4. Todo List
 5. Top Courses
-6. Testimonial Site
+6. Form App
+7. Testimonial Site
+8. Meme Generator
+9. Blog Website
+
+### Miscillneous ( Plain Html, CSS, Tailwind)
+1. Razorpay Clone
+2. Landing Page
