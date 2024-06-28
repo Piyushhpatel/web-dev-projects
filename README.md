@@ -30,6 +30,7 @@ There are two parts in the projects first created using simple html, css and van
 7. Testimonial Site
 8. Meme Generator
 9. Blog Website
+10. Shopping Cart
 
 ### Miscillneous ( Plain Html, CSS, Tailwind)
 1. Razorpay Clone
